@@ -166,6 +166,21 @@
       transform: translateY(-3px);
     }
 
+@media (max-width: 768px) {
+  .hero {
+    background-position: right top; /* image ka right side focus */
+    padding: 40px 15px;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 480px) {
+  .hero {
+    background-position: right center; /* sirf right part dikhne ke liye */
+    min-height: 70vh;
+  }
+}
+
     /* Menu Button (hidden on desktop) */
     .menu-btn {
       display: none;
@@ -180,7 +195,7 @@
         position: absolute;
         top: 70px;
         right: 0;
-        background: rgba(0, 0, 0, 0.9);
+        background: rgba(0, 0, 0, 0.578);
         flex-direction: column;
         width: 200px;
         text-align: left;
@@ -203,7 +218,7 @@
 
     /* About Section */
     .about-section {
-      background: linear-gradient(135deg, #0a0a2a, #1d1d4f);
+      background: linear-gradient(135deg, #0a0a2a, #1a1a4a);
       padding: 80px 20px;
       text-align: center;
       min-height: 100vh;
